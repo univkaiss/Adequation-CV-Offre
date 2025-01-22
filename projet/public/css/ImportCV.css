@@ -1,0 +1,174 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Couleur de fond douce */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* En-tête */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9; /* Gris clair */
+    padding: 15px 40px; /* Espacement pour éloigner les éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; /* Espacement du bord gauche */
+}
+
+.barre-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les éléments du menu */
+}
+
+.langue {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.langue button {
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.langue button:hover {
+    background-color: #e6e6e6; /* Changement de fond au survol */
+    border: 1px solid #ccc;
+}
+
+.langue .actif {
+    background-color: #6b50e6; /* Couleur violette pour le bouton actif */
+    color: white;
+    border: 1px solid #553dbd; /* Bordure violet foncé */
+    font-weight: bold;
+}
+
+.utilisateur {
+    font-size: 16px;
+    margin-right: 10px; /* Espacement du bord droit */
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-deroulant {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu-deroulant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-deroulant li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-deroulant li:last-child {
+    border-bottom: none;
+}
+
+.menu-deroulant a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-deroulant a:hover {
+    background-color: #f0f0f0;
+}
+
+.utilisateur:hover .menu-deroulant {
+    display: block;
+}
+
+/* Titres */
+h1 {
+    font-size: 36px; /* Taille augmentée */
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 30px;
+}
+
+/* Bouton personnalisé pour le fichier */
+input[type="file"] {
+    display: none; /* Cache le champ de téléchargement natif */
+}
+
+label {
+    display: block;
+    margin: 30px auto; /* Centre le bouton */
+    padding: 15px 30px;
+    background-color: #6b50e6; /* Couleur violette */
+    color: white;
+    font-size: 20px; /* Taille augmentée */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px; /* Bouton arrondi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre moderne */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    width: 250px; /* Largeur personnalisée */
+}
+
+label:hover {
+    background-color: #553dbd; /* Violet plus foncé */
+    transform: translateY(-3px); /* Légère élévation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+label:active {
+    transform: translateY(0); /* Supprime l'élévation lors du clic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}

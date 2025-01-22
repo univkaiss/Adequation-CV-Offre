@@ -1,0 +1,26 @@
+[project]
+name = "projetcv"
+version = "0.1.0"
+description = "projetcv using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.95.0,<1.0.0"
+]
+
+[project.scripts]
+projetcv = "projetcv.main:run"
+run_crew = "projetcv.main:run"
+train = "projetcv.main:train"
+replay = "projetcv.main:replay"
+test = "projetcv.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/projetcv"]

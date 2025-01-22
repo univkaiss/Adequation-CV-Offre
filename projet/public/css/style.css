@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+/* En-tête */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9; /* Gris clair */
+    padding: 15px 40px; /* Espacement pour éloigner les éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; /* Espacement du bord gauche */
+}
+
+.barre-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les éléments du menu */
+}
+
+.langue {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.langue button {
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.langue button:hover {
+    background-color: #e6e6e6; /* Changement de fond au survol */
+    border: 1px solid #ccc;
+}
+
+.langue .actif {
+    background-color: #6b50e6; /* Couleur violette pour le bouton actif */
+    color: white;
+    border: 1px solid #553dbd; /* Bordure violet foncé */
+    font-weight: bold;
+}
+
+.utilisateur {
+    font-size: 16px;
+    margin-right: 10px; /* Espacement du bord droit */
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-deroulant {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu-deroulant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-deroulant li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-deroulant li:last-child {
+    border-bottom: none;
+}
+
+.menu-deroulant a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-deroulant a:hover {
+    background-color: #f0f0f0;
+}
+
+.utilisateur:hover .menu-deroulant {
+    display: block;
+}
+
+main {
+    padding: 80px 20px 20px; /* Ajouter un padding-top pour compenser le header */
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 120px;
+}
+
+
+
+.button {
+    display: inline-block;
+    margin: 10px 0;
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: #6e44ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.divider {
+    margin: 20px 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.menu-bouton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.liste-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.liste-menu li {
+    padding: 5px 10px;
+}
+
+.liste-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.liste-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+table {
+
+    width: 80%;
+
+    margin: 0 auto;
+
+    border-collapse: collapse;
+
+    background-color: #fff;
+
+}
+
+.contient {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+table, th, td {
+
+    border: 1px solid #ccc;
+
+}
+
+
+
+th, td {
+
+    text-align: center;
+
+    padding: 10px;
+
+}
+
+
+
+th {
+
+    background-color: #eaeaea;
+
+}
+
+
+
+
+.bouton {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bouton:hover {
+    background-color: #5952cc;
+}
+
+.bouton.sauvegarder {
+    background-color: #4caf50;
+    margin-left: 60px;
+}
+
+.bouton.sauvegarder:hover {
+    background-color: #3e8e41;
+}
+
+

@@ -1,0 +1,248 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fond clair */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Vue pleine hauteur */
+    box-sizing: border-box;
+}
+form {
+    width: auto; /* Changez de 0% à 100% */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+/* En-tête */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9; /* Gris clair */
+    padding: 15px 40px; /* Espacement pour éloigner les éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; /* Espacement du bord gauche */
+}
+
+.barre-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les éléments du menu */
+}
+
+.langue {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.langue button {
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.langue button:hover {
+    background-color: #e6e6e6; /* Changement de fond au survol */
+    border: 1px solid #ccc;
+}
+
+.langue .actif {
+    background-color: #6b50e6; /* Couleur violette pour le bouton actif */
+    color: white;
+    border: 1px solid #553dbd; /* Bordure violet foncé */
+    font-weight: bold;
+}
+
+.utilisateur {
+    font-size: 16px;
+    margin-right: 10px; /* Espacement du bord droit */
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-deroulant {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu-deroulant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-deroulant li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-deroulant li:last-child {
+    border-bottom: none;
+}
+
+.menu-deroulant a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-deroulant a:hover {
+    background-color: #f0f0f0;
+}
+
+.utilisateur:hover .menu-deroulant {
+    display: block;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px; /* Largeur maximale pour le contenu */
+    gap: 20px; /* Espacement entre les colonnes */
+    margin-top: 120px;
+    margin-bottom: 20px; /* Espacement vers le bas pour ajuster l'espace */
+}
+
+/* Colonne gauche : Importation */
+.import-section {
+    flex: 1; /* Ajuste la largeur de manière proportionnelle */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+    margin-right: 20px;
+
+}
+
+.import-section h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.import-section h3 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.import-section input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.import-section input[type="text"]:focus {
+    outline: none;
+    border-color: #6b50e6;
+    box-shadow: 0 0 8px rgba(107, 80, 230, 0.3);
+}
+
+.import-section button {
+    background-color: #6b50e6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.import-section button:hover {
+    background-color: #553dbd;
+}
+
+/* Colonne droite : Vue du CV */
+.preview-section {
+    flex: 2; /* Plus large que la partie gauche */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Utiliser toute la hauteur disponible */
+    box-sizing: border-box;
+
+
+}
+
+.preview-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.preview-section embed {
+    width: 100%;
+    height: 70vh; /* Hauteur dynamique en fonction de la vue */
+    max-height: 700px; /* Limite la hauteur pour ne pas dépasser l'espace */
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .import-section,
+    .preview-section {
+        width: 100%;
+    }
+
+    .preview-section embed {
+        height: 60vh; /* Ajustement pour mobile */
+    }
+}

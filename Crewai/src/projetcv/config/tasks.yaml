@@ -1,0 +1,20 @@
+evaluate_cv:
+  description: >
+    Calculez rapidement le taux d'adéquation entre le CV et l’offre d’emploi en te basant sur la grille d'évaluation .
+  expected_output: >
+    Un rapport contenant seulement : - Le score d'adéquation global (en pourcentage) entre le CV et l'offre d'emploi.
+  agent: cv_matcher
+
+improve_cv:
+  description: >
+    Peux-tu me proposer plusieurs amélioration pour que le CV soit en adéquation avec l’offre d’emploi. Ton objectif est d'améliorer le CV afin d'augmenter son taux d'adéquation avec l'offre d'emploi. Utilise un ton formel, explicite et structuré. Donne-moi le résultat suivant : Des modifications pertinentes pour chaque catégorie du CV. Une justification de chaque amélioration proposée. Une évaluation de l’impact avant et après modification en précisant le poids de chaque catégorie  sur ce taux d’adéquation. L'indication des inéquations non résolues. 5) Une évaluation de la pertinence du taux d’adéquation final. Explique pourquoi le CV après modifications serait plus compétitif pour l'offre d’emploi. Si possible, propose aussi des idées de design ou de mise en page pour professionnaliser la présentation du CV.
+  expected_output: >
+    Une version améliorée du CV, avec des sections mises à jour ou ajoutées, mettant en valeur les compétences et l'expérience pertinentes pour l'offre d'emploi.
+  agent: cv_improver
+
+write_motivation_letter:
+  description: >
+    À partir de l’offre d'emploi et du CV, rédige-moi une lettre de motivation personnalisée qui prend en paramètres les adéquations entre le CV joint et l’offre d’emploi. Donne-moi le résultat suivant : - Utilise uniquement les informations de l’offre et du CV. - Mets en avant les points forts du candidat qui répondent directement aux attentes du poste. - Mentionne les compétences transférables en cas de décalage entre le CV et l’offre. - Montre l’enthousiasme et la motivation du candidat à rejoindre l’entreprise. - Renseigne les coordonnées de manière professionnelle. Adopte un ton formel, professionnel et engageant. La lettre doit être concise, claire, et montrer une motivation sincère et convaincante. Je veux une lettre de motivation fluide, bien structurée et professionnelle, qui valorise les compétences et expériences du candidat en cohérence avec les attentes de l’offre.
+  expected_output: >
+    Une lettre de motivation bien structurée et persuasive, mettant en avant : - Les points forts du candidat en relation avec l'offre d'emploi. - Son enthousiasme pour le poste et l'entreprise de l'offre fournit. - Une conclusion invitant à un entretien.
+  agent: motivation_letter_writer

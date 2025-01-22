@@ -1,0 +1,185 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333; /* Gris foncé pour le texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9; /* Gris clair */
+    padding: 15px 40px; /* Espacement pour éloigner les éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px; /* Espacement du bord gauche */
+}
+
+.barre-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.utilisateur {
+    position: relative;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer; /* Indiquer que c'est cliquable */
+}
+
+.menu-deroulant {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu-bouton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.liste-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.liste-menu li {
+    padding: 5px 10px;
+}
+
+.liste-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.liste-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-deroulant:hover .liste-menu {
+    display: block;
+}
+
+.langue button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.langue .actif {
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Ajouter une couleur de fond */
+    border-radius: 10px; /* Ajouter des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+    max-width: 800px; /* Limiter la largeur maximale */
+    margin: 20px auto; /* Centrer la div avec des marges automatiques */
+}
+
+main {
+    text-align: left; /* Aligner le texte à gauche */
+    margin-top: 20px; /* Ajuster la marge supérieure */
+    width: 100%; /* Ajuster la largeur */
+    padding: 20px; /* Ajouter du padding */
+    background-color: #ffffff; /* Ajouter une couleur de fond */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%; /* Prendre toute la largeur disponible */
+}
+
+form label {
+    margin-top: 20px; /* Ajouter de l'espace au-dessus des labels */
+    font-weight: bold; /* Mettre les labels en gras */
+}
+
+form input, form fieldset {
+    margin-top: 10px; /* Ajouter de l'espace au-dessus des inputs et fieldsets */
+    width: 100%; /* Prendre toute la largeur disponible */
+    padding: 10px; /* Ajouter du padding */
+    border: 2px solid #ccc; /* Ajuster la bordure */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+}
+
+form fieldset {
+    padding: 10px; /* Ajouter du padding */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+}
+
+form button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Ajouter de l'espace au-dessus du bouton */
+    align-self: center; /* Centrer le bouton */
+}
+
+form button:hover {
+    background-color: #5952cc;
+}

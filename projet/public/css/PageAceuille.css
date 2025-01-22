@@ -1,0 +1,56 @@
+/* Ensure the existing styles are applied properly */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    font-size: 20px;
+    color: #6c63ff;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #d0d0d0;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

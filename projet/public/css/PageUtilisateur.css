@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    
+}
+
+.contient {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* En-tête */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9; /* Gris clair */
+    padding: 15px 40px; /* Espacement pour éloigner les éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.barre-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacement entre les éléments du menu */
+}
+
+.langue {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.langue button {
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.langue button:hover {
+    background-color: #e6e6e6; /* Changement de fond au survol */
+    border: 1px solid #ccc;
+}
+
+.langue .actif {
+    background-color: #6b50e6; /* Couleur violette pour le bouton actif */
+    color: white;
+    border: 1px solid #553dbd; /* Bordure violet foncé */
+    font-weight: bold;
+}
+
+.utilisateur {
+    font-size: 16px;
+    margin-right: 10px; /* Espacement du bord droit */
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-deroulant {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu-deroulant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-deroulant li {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-deroulant li:last-child {
+    border-bottom: none;
+}
+
+.menu-deroulant a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-deroulant a:hover {
+    background-color: #f0f0f0;
+}
+
+.utilisateur:hover .menu-deroulant {
+    display: block;
+}
+
+
+.contenu {
+    flex: 1;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px ;
+    margin-top: 50px;
+}
+
+.accroche {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    max-width: 100%;
+    text-align: justify;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+   
+    margin: 20px auto;
+   
+    line-height: 1.6;
+}
+
+.bienvenue{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+.bienvenue h1 {
+    padding: auto;
+    font-size: 24px;
+    color: #6c63ff;
+    
+    text-align: center;
+    font-size: 45px;
+
+}
+
+.bienvenue hr {
+    border: 1px solid #d0d0d0;
+}
+
+.contenu-principal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.resume-actions {
+    flex: 0.5;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-right: 30px;
+    height: 86.5vh;
+    
+}
+
+.resume-actions h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.actions .action {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.action .icone {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.cartes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajoute un espacement entre les cartes */
+    justify-content: flex-start; /* Assure que les cartes restent en haut */
+    height: calc(100vh - 180px); /* Ajuste la hauteur du conteneur */
+     /* Permet le défilement si le contenu dépasse */
+}
+
+.carte {
+    background-color: #dad9f8;
+    padding: 20px;
+    border: 1px solid #d0e7e7;
+    border-radius: 8px;
+    flex: 0 0 auto; /* Empêche l'étirement des cartes */
+    margin-bottom: 0; /* Supprime les marges supplémentaires */
+    height: auto; /* Permet à la carte de s'adapter à son contenu */
+}
+
+
+.icone{
+    width: 50px;
+}
+
+.action p{
+    font-size: 20px;
+}
+
+.carte h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.carte p {
+    font-size: 27px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  
+
+}
+
+.carte .lien {
+    display: inline-block; /* Permet de le traiter comme un lien bouton */
+    background-color: transparent; /* Fond transparent */
+    color: #6c63ff; /* Couleur principale */
+    font-size: 30px; /* Taille du texte */
+    font-weight: bold;
+    text-decoration: none; /* Retire la décoration de lien */
+    padding: 10px 20px; /* Espace interne pour agrandir la zone cliquable */
+    border: none; /* Supprime les bordures du bouton */
+    cursor: pointer; /* Change le curseur en main */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Effets de transition */
+}
+
+.carte .lien:hover {
+    background-color: #ffffff; /* Ajout d'une couleur de fond au survol */
+    color: #4c4caa; /* Couleur plus foncée au survol */
+    border-radius: 5px; /* Coins légèrement arrondis au survol */
+}
+
+.carte .lien:active {
+    transform: scale(0.98); /* Effet de clic : réduction légère */
+}
+
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+}

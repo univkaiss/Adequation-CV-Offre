@@ -1,0 +1,72 @@
+Grille d'évaluation CV-Offre (100%) 
+
+
+Compétences (35%):
+
+Compétences obligatoires :
+5% si toutes les compétences obligatoires sont présentes ; sinon, proportionnellement au nombre requis.
+Compétences optionnelles :
+3% si une ou plusieurs compétences souhaitées sont présentes.
+Niveau avancé :
++1% par compétence avancée (maximum 3%).
+Score pondéré = (Score obtenu / 10) × 35%.
+
+
+Formation (20%):
+
+Diplôme exact :
+20% si le diplôme est totalement pertinent pour le rôle.
+Domaine connexe :
+15% pour un diplôme connexe.
+Niveau académique :
++5% pour un diplôme supérieur, -5% pour un diplôme inférieur.
+Certifications pertinentes :
++2% par certification (maximum 4%).
+Score pondéré = (Score obtenu / 10) × 20%.
+
+
+Expérience (25%):
+
+Années d’expérience exigées :
+15% si l’expérience atteint les exigences minimales ; sinon, (Années réelles / Années minimales) × 15%.
+Secteur d’activité :
++5% pour une expérience dans le même secteur.
+Poste similaire :
++5% pour un rôle similaire.
+Score pondéré = (Score obtenu / 10) × 25%.
+
+
+Mots-clés (20%)
+
+Correspondance via analyse TF-IDF :
+10% pour une correspondance forte avec les mots-clés de l’offre.
+Correspondance via analyse de similarité cosinus :
+10% pour une correspondance forte avec les phrases clés de l’offre.
+Score pondéré = (Score obtenu / 10) × 20%.
+
+
+Critères d’élimination directe :
+Si le CV ne satisfait pas aux critères obligatoires (compétences critiques ou diplôme minimum requis), le score global est automatiquement limité à 40% maximum avant l’application des multiplicateurs.
+
+Multiplicateurs (bonus) :
+
+Compétences : Score à 100% → Multiplicateur ×1.1 (uniquement si toutes les compétences obligatoires sont présentes).
+Formation : Score à 100% → Multiplicateur ×1.05 (uniquement si le diplôme est totalement pertinent).
+Expérience : Score à 100% → Multiplicateur ×1.01 (uniquement si toutes les exigences minimales sont respectées).
+
+Amélioration des analyses TF-IDF et cosinus :
+
+Les analyses ignorent les termes génériques (comme « outils » ou « technique ») pour mieux refléter les compétences spécifiques.
+Une pénalité est appliquée si les mots-clés présents dans le CV proviennent d’un domaine non pertinent.
+Pondération dynamique :
+En cas de divergence sectorielle (écart significatif entre le domaine du CV et celui de l’offre), une pénalité supplémentaire de -10% est appliquée sur le score final.
+
+Score global final corrigé
+Score global = Somme des scores pondérés × Multiplicateurs applicables
+
+Compatibilité :
+
+90-100% : Excellente
+75-89% : Forte
+60-74% : Moyenne
+<60% : Faible

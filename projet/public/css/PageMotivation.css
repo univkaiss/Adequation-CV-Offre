@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.contient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.barre-outils {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 70px;
+}
+
+.utilisateur {
+    position: relative;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-deroulant {
+    position: relative;
+}
+
+.menu-bouton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.liste-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.liste-menu li {
+    padding: 5px 10px;
+}
+
+.liste-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.liste-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-deroulant:hover .liste-menu {
+    display: block;
+}
+
+.langue button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.langue .actif {
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.contenu-principal {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.zone-lettre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.zone-lettre embed {
+    margin-top: 30px;
+    width: 40%;
+    height: 600px;
+    border: 3px solid #ccc;
+}
+
+.zone-boutons {
+    display: flex;
+    margin-top: 70px;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.bouton {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.bouton:hover {
+    background-color: #5952cc;
+}
+
+.bouton.sauvegarder {
+    background-color: #4caf50;
+    margin-left: 60px;
+}
+
+.bouton.sauvegarder:hover {
+    background-color: #3e8e41;
+}
