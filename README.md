@@ -1,3 +1,2 @@
 # Ad-quation-CV-Offre
-Projet d un site d'adéquation entre un cv et une offre d emploie utilisant des agents ia 
-Ici l ia utiliser n'est pas dans ce depot pour des raisons logistiques
+Ce projet vise à développer un site permettant d’évaluer l’adéquation entre un CV et une offre d’emploi en utilisant des agents d’intelligence artificielle. Actuellement, l’IA utilisée n’est pas incluse dans ce dépôt pour des raisons logistiques. En tant qu’étudiant, il n’est pas possible d’héberger et de faire fonctionner le site à distance pour le moment. Toutefois, j’ai réussi à faire fonctionner la solution localement en installant Ollama sur un serveur. Le projet est facilement adaptable et peut intégrer des API externes pour remplacer l’IA locale et permettre une utilisation plus flexible.
